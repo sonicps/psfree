@@ -1,24 +1,8 @@
-<!-- Copyright (C) 2023-2025 anonymous
 
-This file is part of PSFree.
-
-PSFree is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as
-published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version.
-
-PSFree is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
--->
 <html>
     <head>
         <meta charset='utf-8'>
-        <title>PSFree-Lapse Exploit For 9.00</title>
+        <title>PSFree-Sonicps</title>
         <style>
             @font-face {
                 font-family: 'logging';
@@ -30,23 +14,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </style>
     </head>
     <body>
-        PSFree: PS4<br>
-        Sonicps<br>
-        See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
+        PSFree: exploit<br>
+        Sonicps<a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
         source code and license.<br>
         <pre id='console'></pre>
     </body>
-    <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-          .then(registration => {
-            console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch(error => {
-            console.error('Service Worker registration failed:', error);
-          });
-      });
-    }
-    </script>
+    <script type='module' src='./alert.mjs'></script>
 </html>
