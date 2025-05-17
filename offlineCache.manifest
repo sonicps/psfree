@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# v1.0 : 18-12-2021
+ 
+index.html
+about.html
+alert.mjs
+config.mjs
+lapse.mjs
+psfree.mjs
+send.mjs
